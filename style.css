@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+}
+
+nav{
+    display: flex;
+    width: 100;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+}
+
+.logo{
+    display: flex;
+    font-size: 35px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+b{
+    font-size: 40px;
+    color: #00a2ff;    
+}
+
+.navitems{
+    display: flex;
+}
+
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navitems li a{
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+}
+
+.navitems li a:hover, .links a:hover{
+    color: #00a2ff;
+}
+
+.links a{
+    font-size: 25px;
+    color: #3d535f;
+}
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #00a2ff, white);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #00a2ff, white);
+    animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+    50%{
+        left: -10%;
+        top: 45%;
+    }
+    
+}
+
+@keyframes object2 {
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+    
+}
+.cols{
+    width: 50%;
+}
+
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: #3d535f;
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #00a2ff;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multxt{
+    color: #00a2ff;
+}
+
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+    border-radius: 20%;
+}
+
+button a{
+    color: white;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #00a2ff;
+    transition: 1s;    
+}
+
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -100px;
+    right: 50px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+
+.imgbox #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+
+    50%{
+        top: 49%;
+        left: 51%;
+        width: 155%;
+    }
+    
+}
+
+
+.absect{
+        margin: 0 50px;
+}
+
+.sectitle{
+    text-align: center;
+    font-size: 40px;
+    color: #3d535f;
+}
+
+.secsub{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.abdata{
+    text-align: center;
+}
+
+.abinfo{
+    display: flex;
+    justify-content: center;
+}
+
+.abdesc{
+    margin: 15px 170px;
+}
+
+
+.abinfotxt{
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.abinfotxt :nth-child(1){
+    font-size: 30px;
+    color: #00a2ff;
+}
+
+.abtbtn {
+    padding: 10px;
+    margin: 15px;
+}
+
+.abtbtn a{
+    box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #00a2ff;
+}
+
+section{
+    padding: 50px 120px;
+}
+
+.skcont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skwrap{
+    padding: 30px 0;
+}
+
+.skwrap h3{
+    font-size: 16px;
+}
+
+.skcont{
+    padding: 20px;
+}
+
+.skhead{
+    display: flex;
+}
+
+.skhead i{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.sklist{
+    width: 80%;
+    margin: 0px 70px;
+}
+
+.skdata{
+    margin: 15px 0;
+}
+
+.sktitles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skbar, .skpercenthtml, .skpercentcss, .skpercentcss1, .skpercentjs, .skpercentreact, .skpercentphp,.skpercentnode,.skpercentpython{  
+    display: block;  
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skpercenthtml, .skpercentcss, .skpercentcss1, .skpercentjs, .skpercentreact, .skpercentphp,.skpercentnode,.skpercentpython{
+        background-color: #00a2ff;
+}
+.skbar{
+    background-color: #3d535f;
+}
+
+.skpercenthtml{
+    width: 100%;
+}
+
+.skpercentcss{
+    width: 100%;
+}
+
+.skpercentcss1{
+    width: 70%;
+}
+
+.skpercentjs{
+    width: 90%;
+}
+
+.skpercentreact{
+    width: 80%;
+}
+
+.skpercentphp{    
+    width: 80%;
+}
+
+.skpercentnode{    
+    width: 80%;
+}
+
+.skpercentpython{    
+    width: 80%;
+}
+
+.contactcont{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.contactinfo{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+.contactinfo i{
+    font-size: 40px;
+    color: #3d535f;
+}
+
+.continput{
+    display: flex;
+}
+
+.concontent{
+    border: 1px solid #3d535f;
+    display: grid;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+form input, textarea{
+    border: none;
+    outline: none;
+}
+
+.sendbtn{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.sendbtn a{
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sendbtn a:hover{
+    background-color: #3d535f;
+    transition: .5s ease-out;
+    color: white;
+}
+
+footer{
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h4{
+    width: 300px;
+}
+
+.fulnks a{
+    margin: 20px;
+    font-weight: 600;
+}
+
+.socials{
+    font-size: 20px;
+}
